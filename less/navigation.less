@@ -1,14 +1,21 @@
 // Navigation Styles here
-div .bus{
-    display: flex;
-    border:1px solid red;
-    h1{
-        text-align: center;
-    }
-    nav{
-        display:flex;
+nav{
+    display:flex;
+    justify-content: space-between;
+    width: 250px;
+    margin: 20px 28px 20px 0;
+    @media @mobile{
+        width: 100%;
         justify-content: space-evenly;
-        width:50%
-        
+        margin: 0 auto;
     }
-}
+    a{
+        text-decoration: none;
+        font-size: 1.6rem; 
+        color: #000;
+    }// closes the a
+    a:hover{
+        .highlight();
+    }
+}// closes the nav
+
